@@ -1,0 +1,116 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/index_css.css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/scrollQ.js"></script>
+    <script type="text/javascript" src="js/bxCarousel.js"></script>
+    <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <header>
+        <span id="header_login">用户名：<input class="header-input" type="text">密码：<input class="header-input" type="text"><input type="button" value="登录" class="header-input"><input type="button" id="register" value="注册"></span>
+        <span id="qcode"><img class="qcode" src="img/erweima.png"></span>
+    </header>
+    <div id="music">
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="http://music.163.com/outchain/player?type=2&id=110118&auto=1&height=32"></iframe>
+    </div>
+    <div id="qrcode"></div>
+    <div id="fly" style="position:absolute;left:16px;	top:80px;width:80px;	height:60px;	z-index:1;"><a href="exam.html"><img src="img/answer.gif" width="80px" height="60px" border="0"></a></div>
+    <div id="content">
+        <!-- 轮播广告 -->
+        <div id="banner_tabs" class="flexslider">
+            <ul class="slides">
+                <li>
+                    <a title="" target="_blank" href="#">
+                        <img width="1920px" height="482px" alt="" style="background: url(img/pic_play/banner1.jpg) no-repeat center;" src="img/pic_play/alpha.png">
+                    </a>
+                </li>
+                <li>
+                    <a title="" href="#">
+                        <img width="1920px" height="482" alt="" style="background: url(img/pic_play/banner2.jpg) no-repeat center;" src="img/pic_play/alpha.png">
+                    </a>
+                </li>
+                <li>
+                    <a title="" href="#">
+                        <img width="1920px" height="482px" alt="" style="background: url(img/pic_play/banner3.jpg) no-repeat center;" src="img/pic_play/alpha.png">
+                    </a>
+                </li>
+            </ul>
+            <ul class="flex-direction-nav">
+                <li><a class="flex-prev" href="javascript:;">Previous</a></li>
+                <li><a class="flex-next" href="javascript:;">Next</a></li>
+            </ul>
+            <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+                <li><a>1</a></li>
+                <li><a>2</a></li>
+                <li><a>2</a></li>
+            </ol>
+        </div>
+
+        <script type="text/javascript">
+            $(function() {
+                var bannerSlider = new Slider($('#banner_tabs'), {
+                    time: 5000,
+                    delay: 400,
+                    event: 'hover',
+                    auto: true,
+                    mode: 'fade',
+                    controller: $('#bannerCtrl'),
+                    activeControllerCls: 'active'
+                });
+                $('#banner_tabs .flex-prev').click(function() {
+                    bannerSlider.prev()
+                });
+                $('#banner_tabs .flex-next').click(function() {
+                    bannerSlider.next()
+                });
+            })
+        </script>
+        <div id="news">
+            <div class="news_item" id="news_item_1">
+                <div id="notice"><img src="img/tcgg_pic.png"></div>
+                <div id="notice_content">
+                    <ul id="sItem">
+                    <li class="marquee_item">各地各高校2016年考研成绩查询时间及入口汇总</li>
+                    <li class="marquee_item">2016年广东考研成绩查询时间及入口汇总（各高校）</li>
+                    <li class="marquee_item">2016年广西考研成绩查询时间及入口汇总（各高校）</li>
+                    <li class="marquee_item">2016年河南研究生成绩查询时间及入口汇总（各高校）</li>
+                    <li class="marquee_item">2016年辽宁考研成绩查询时间及入口汇总（各高校）</li>
+                    <li class="marquee_item">2016年上海研究生成绩查询时间及入口汇总（各高校）</li>
+                    <li class="marquee_item">2016年安徽考研成绩查询时间及入口汇总（各高校）</li>
+                    <li class="marquee_item">2016年广东考研成绩查询时间及入口汇总（各高校）</li>
+                    <li class="marquee_item">2016年广西考研成绩查询时间及入口汇总（各高校）</li>
+                    <li class="marquee_item">2016年河南研究生成绩查询时间及入口汇总（各高校）</li>
+                    <li class="marquee_item">2016年辽宁考研成绩查询时间及入口汇总（各高校）</li>
+                    <li class="marquee_item">2016年广东考研成绩查询时间及入口汇总（各高校）</li>
+                    <li class="marquee_item">2016年广西考研成绩查询时间及入口汇总（各高校）</li>
+                    <li class="marquee_item">2016年河南研究生成绩查询时间及入口汇总（各高校）</li>
+                    <li class="marquee_item">2016年辽宁考研成绩查询时间及入口汇总（各高校）</li>
+                    <li class="marquee_item">2016年广东考研成绩查询时间及入口汇总（各高校）</li>
+                    <li class="marquee_item">2016年广西考研成绩查询时间及入口汇总（各高校）</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="news_item" id="news_item_3">
+                <div class="bx_wrap">
+                    <div class="bx_container">
+                        <ul id="demo1">
+                            <li><a href="#"><img  alt="#" width="160px" height="120px" src="img/edu_pic/erjianbm.jpg"><br/>二级建筑师</a></li>
+                            <li><a href="#"><img  alt="#" width="160px" height="120px" src="img/edu_pic/gaokaobm.jpg"><br/>高考报名</a></li>
+                            <li><a href="#"><img  alt="#" width="160px" height="120px" src="img/edu_pic/yijianchaxun.jpg"><br/>一级建筑师</a></li>
+                            <li><a href="#"><img  alt="#" width="160px" height="120px" src="img/edu_pic/zcyybm.jpg"><br/>中国人事考试网</a></li>
+                            <li><a href="#"><img  alt="#" width="160px" height="120px" src="img/edu_pic/zhongkaobm.jpg"><br/>2016中考</a></li>
+                            <li><a href="#"><img  alt="#" width="160px" height="120px" src="img/edu_pic/zq2.jpg"><br/>环球网校</a></li>
+                            <li><a href="#"><img  alt="#" width="160px" height="120px" src="img/edu_pic/zq6.jpg"><br/>新东方在线</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

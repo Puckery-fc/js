@@ -1,0 +1,120 @@
+body {
+    font-family: "微软雅黑","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+    background: #ddf4ff url("../img/oldbg2-bg.jpg") repeat-x;
+}
+
+#content {
+    width: 900px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+#content_title{
+    margin-top: 66px;
+    font-size: 35px;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #4894ff;
+}
+.div_question {
+    border: 2px solid white;
+    padding: 4px;
+    clear: both;
+    margin: 2px auto 10px;
+    width: 96%;
+    height: auto;
+}
+.div_title_question_all {
+    padding-top: 2px;
+    font-size: 15px;
+    color: #444444;
+    font-weight: bold;
+    height: auto;
+    line-height: 20px;
+}
+.div_table_radio_question {
+    clear: both;
+    padding-top: 5px;
+    padding-left: 24px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #EFEFEF;
+    font-size: 14px;
+    color: #333333;
+    _padding-left: 27px;
+}
+.div_table_clear_top {
+    clear: both;
+    margin-top: 4px;
+}
+.div_table_radio_question ul {
+    clear: both;
+}
+.div_table_radio_question ul li {
+    margin-bottom: 3px;
+}
+dl, dt, dd, ul, li, ol, p, form, img {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border: none;
+}
+.div_title_cut_question {
+    font-size: 14px;
+}
+.div_title_cut_question {
+    padding: 2px 0;
+    width: 97%;
+    margin: 10px auto;
+    line-height: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.surveydescription {
+    color: #555555;
+    line-height: 24px;
+    text-align: left;
+    font-size: 16px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ccc;
+    margin-left: 0;
+    margin-top: 20px;
+}
+.underline {
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid 1px #7F9DB9;
+}
+
+#finish{
+    margin-top: 35px;
+    padding-bottom: 66px;
+    text-align: center;
+}
+input.submitbutton {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    border: 0;
+    cursor: pointer;
+    background: #f17819;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0 15px;
+    overflow: visible;
+}
+#city{
+    margin-top: 20px;
+    text-align: center;
+}
+#site{
+    margin-top: 6px;
+    text-align: center;
+
+}
+#page_type_A{
+    display: none;
+}
+#page_type_B{
+    display: none;
+}

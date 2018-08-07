@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>注册</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/supersized.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Javascript -->
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/supersized.3.2.7.min.js"></script>
+    <script src="js/supersized-init.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/register.js"></script>
+
+</head>
+<!-- <header>
+        <span>用户名：<input class="header-input" type="text">密码：<input class="header-input" type="text"><input type="button" value="登录"></span>
+    </header>-->
+<body>
+
+<div class="page-container">
+
+    <div class="tabs-header">
+        <div class="border"></div>
+        <ul>
+            <li class="active"><a href="#tab-1" tab-id="1" ripple="ripple" ripple-color="#FFF">注册</a></li>
+            <li><a href="#tab-2" tab-id="2" ripple="ripple" ripple-color="#FFF" id="login_href">登录</a></li>
+        </ul>
+        <nav class="tabs-nav"><i id="prev" ripple="ripple" ripple-color="#FFF" class="material-icons">&#xE314;</i><i id="next" ripple="ripple" ripple-color="#FFF" class="material-icons">&#xE315;</i></nav>
+    </div>
+    <div class="tabs-content">
+        <div tab-id="1" class="tab active">
+            <form action="#tab-2" method="post" id="register">
+                <input type="text" name="username" class="username" placeholder="用户名">
+                <input type="password" name="password" class="password"  placeholder="密码">
+                <input type="password" name="confirmPsw" class="confirmPsw" placeholder="重复密码">
+                <input type="text" name="email" class="email" placeholder="email">
+                <span id="user_protocol">
+                    <input type="checkbox" id="is_agree_protocol"/>
+                    <a id="protocol_a" href="#tab-3" tab-id="3" ripple="ripple" ripple-color="#FFF"
+                       style="font-family:'楷体';font-size: 16px">注册须知</a>
+                </span>
+                <button type="submit" class="btn_ok">提交</button>
+                <div class="error"><span>+</span></div>
+            </form>
+        </div>
+        <div tab-id="2" class="tab" id="login">
+            <form action="index.html" method="post">
+                <input type="text" name="username" class="username" placeholder="用户名">
+                <input type="password" name="password" class="password" placeholder="密码">
+                <button type="submit" class="btn_ok">提交</button>
+                <div class="error"><span>+</span></div>
+            </form>
+        </div>
+        <div tab-id="3" class="tab">
+            <h1>用户协议</h1><br/>
+
+            <p>1.删除软件及其副本上关于著作权的信息；</p>
+
+            <p>2.对软件进行反向工程、反向汇编、反向编译，或者以其他方式尝试发现软件的源代码；</p>
+
+            <p>3.对腾讯拥有知识产权的内容进行使用、出租、出借、复制、修改、链接、转载、汇编、发表、出版、建立镜像站点等；</p>
+
+            <p>
+                4.对软件或者软件运行过程中释放到任何终端内存中的数据、软件运行过程中客户端与服务器端的交互数据，以及软件运行所必需的系统数据，进行复制、修改、增加、删除、挂接运行或创作任何衍生作品，形式包括但不限于使用插件、外挂或非经腾讯授权的第三方工具/服务接入软件和相关系统；</p>
+
+            <p>5.通过修改或伪造软件运行中的指令、数据，增加、删减、变动软件的功能或运行效果，或者将用于上述用途的软件、方法进行运营或向公众传播，无论这些行为是否为商业目的；</p>
+
+            <p>6.通过非腾讯开发、授权的第三方软件、插件、外挂、系统，登录或使用腾讯软件及服务，或制作、发布、传播上述工具；</p>
+
+            <p>7.其他未经腾讯明示授权的行为。</p><br/>
+            <span style="font-family: Arial;font-weight: bold;color: #ff3300;">如果您实施了前款约定的行为，腾讯将保留依法追究法律责任的权利。</span>
+            <span><a class="btn_sure" id="btn_sure" href="#tab-1" tab-id="1" ripple="ripple" ripple-color="#FFF">确 定</a></span>
+        </div>
+    </div>
+</div>
+<!--<h1>注册</h1>-->
+<!--<form action="" method="post">
+    <input type="text" name="username" class="username" placeholder="用户名">
+    <input type="password" name="password" class="password" placeholder="密码">
+    <input type="password" name="confirmPsw" class="confirmPsw" placeholder="重复密码">
+    <input type="text" name="email" class="email" placeholder="email">
+    <button type="submit">提交</button>
+    <div class="error"><span>+</span></div>
+</form>-->
+<!-- <div class="connect">
+     <p>Or connect with:</p>
+     <p>
+         <a class="facebook" href=""></a>
+         <a class="twitter" href=""></a>
+     </p>
+ </div>-->
+
+
+
+</div>
+
+</body>
+
+</html>
+
+

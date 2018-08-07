@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="stylesheet" href="css/exam_css.css">
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cityselect.js"></script>
+    <script src="js/exam.js"></script>
+</head>
+<body>
+<div id="content">
+    <div id="content_head"><img src="img/oldbg2.jpg"></div>
+    <div id="content_title">
+        Html在线测试
+    </div>
+    <div id="city">
+        <select class="prov"></select>
+        <select class="city" disabled="disabled"></select>
+        <select class="dist" disabled="disabled"></select>
+    </div>
+    <div id="site">
+        <select id="page_type">
+            <option selected>--选择试卷类型--</option>
+            <option value="A">A卷</option>
+            <option value="B">B卷</option>
+        </select>
+        <select class="prov"></select>
+        <select class="city" disabled="disabled"></select>
+        <select class="dist" disabled="disabled"></select>
+        姓名：<input style="width:90px;" class="underline">班级：<input type="text" style="width: 100px" class="underline">
+    </div>
+
+    <div id="pater_desc" class="surveydescription"></div>
+    <div id="content_questions">
+        <div class="div_preview">
+            <div class="div_title_cut_question">
+                <div class="div_title_question"><span>一、选择</span></div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <div class="div_question" id="div1">
+            <div class="div_title_question_all">
+                <div id="divTitle1" class="div_title_question">1.在一个框架的属性面板中，不能设置下面哪一项。(&nbsp;&nbsp; )<span
+                        style="color:red;">&nbsp;*</span></div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="div_table_radio_question" id="divquestion1">
+                <div class="div_table_clear_top"></div>
+                <ul class="ulradiocheck">
+                    <li style="width:99%;"><input type="radio" name="q1" id="q1_1" value="1"><label
+                            for="q1_1">A．源文件</label></li>
+                    <li style="width:99%;"><input type="radio" name="q1" id="q1_2" value="2"><label
+                            for="q1_2">B．边框颜色</label></li>
+                    <li style="width:99%;"><input type="radio" name="q1" id="q1_3" value="3"><label
+                            for="q1_3">C．边框宽度</label></li>
+                    <li style="width:99%;"><input type="radio" name="q1" id="q1_4" value="4"><label
+                            for="q1_4">D．滚动条</label></li>
+                    <div style="clear:both;"></div>
+                </ul>
+                <div style="clear:both;"></div>
+                <div class="div_table_clear_bottom"></div>
+            </div>
+            <div class="errorMessage"></div>
+        </div>
+        <div class="div_question" id="div2">
+            <div class="div_title_question_all">
+                <div id="divTitle2" class="div_title_question">2.&nbsp;下列哪一项表示的不是按钮。(&nbsp;&nbsp; )<span
+                        style="color:red;">&nbsp;*</span></div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="div_table_radio_question" id="divquestion2">
+                <div class="div_table_clear_top"></div>
+                <ul class="ulradiocheck">
+                    <li style="width:99%;"><input type="radio" name="q2" id="q2_1" value="1"><label for="q2_1">A．type="submit"</label>
+                    </li>
+                    <li style="width:99%;"><input type="radio" name="q2" id="q2_2" value="2"><label for="q2_2">B．type="reset"</label>
+                    </li>
+                    <li style="width:99%;"><input type="radio" name="q2" id="q2_3" value="3"><label for="q2_3">C．type="image"</label>
+                    </li>
+                    <li style="width:99%;"><input type="radio" name="q2" id="q2_4" value="4"><label for="q2_4">D．type="button"</label>
+                    </li>
+                    <div style="clear:both;"></div>
+                </ul>
+                <div style="clear:both;"></div>
+                <div class="div_table_clear_bottom"></div>
+            </div>
+            <div class="errorMessage"></div>
+        </div>
+        <div class="div_question" id="div3">
+            <div class="div_title_question_all">
+                <div id="divTitle3" class="div_title_question">3.下面哪一个属性不是文本的标签属性？(&nbsp;&nbsp; )<span
+                        style="color:red;">&nbsp;*</span></div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="div_table_radio_question" id="divquestion3">
+                <div class="div_table_clear_top"></div>
+                <ul class="ulradiocheck">
+                    <li style="width:99%;"><input type="radio" name="q3" id="q3_1" value="1"><label
+                            for="q3_1">A．nbsp;</label></li>
+                    <li style="width:99%;"><input type="radio" name="q3" id="q3_2" value="2"><label
+                            for="q3_2">B．align</label></li>
+                    <li style="width:99%;"><input type="radio" name="q3" id="q3_3" value="3"><label
+                            for="q3_3">C．color</label></li>
+                    <li style="width:99%;"><input type="radio" name="q3" id="q3_4" value="4"><label
+                            for="q3_4">D．face</label></li>
+                    <div style="clear:both;"></div>
+                </ul>
+                <div style="clear:both;"></div>
+                <div class="div_table_clear_bottom"></div>
+            </div>
+            <div class="errorMessage"></div>
+        </div>
+        <div class="div_question" id="div4">
+            <div class="div_title_question_all">
+                <div id="divTitle4" class="div_title_question">4.下面哪一项的电子邮件链接是正确的？(&nbsp;&nbsp; )<span
+                        style="color:red;">&nbsp;*</span></div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="div_table_radio_question" id="divquestion4">
+                <div class="div_table_clear_top"></div>
+                <ul class="ulradiocheck">
+                    <li style="width:99%;"><input type="radio" name="q4" id="q4_1" value="1"><label for="q4_1">A．xxx.com.cn</label>
+                    </li>
+                    <li style="width:99%;"><input type="radio" name="q4" id="q4_2" value="2"><label for="q4_2">B．xxx@.net</label>
+                    </li>
+                    <li style="width:99%;"><input type="radio" name="q4" id="q4_3" value="3"><label
+                            for="q4_3">C．xxx@com</label></li>
+                    <li style="width:99%;"><input type="radio" name="q4" id="q4_4" value="4"><label for="q4_4">D．xxx@xxx.com</label>
+                    </li>
+                    <div style="clear:both;"></div>
+                </ul>
+                <div style="clear:both;"></div>
+                <div class="div_table_clear_bottom"></div>
+            </div>
+            <div class="errorMessage"></div>
+        </div>
+        <div class="div_question" id="div5">
+            <div class="div_title_question_all">
+                <div id="divTitle5" class="div_title_question">5.当链接指向下列哪一种文件时，不打开该文件，而是提供给浏览器下载。(&nbsp;&nbsp; )<span
+                        style="color:red;">&nbsp;*</span></div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="div_table_radio_question" id="divquestion5">
+                <div class="div_table_clear_top"></div>
+                <ul class="ulradiocheck">
+                    <li style="width:99%;"><input type="radio" name="q5" id="q5_1" value="1"><label
+                            for="q5_1">A．ASP</label></li>
+                    <li style="width:99%;"><input type="radio" name="q5" id="q5_2" value="2"><label
+                            for="q5_2">B．HTML</label></li>
+                    <li style="width:99%;"><input type="radio" name="q5" id="q5_3" value="3"><label
+                            for="q5_3">C．ZIP</label></li>
+                    <li style="width:99%;"><input type="radio" name="q5" id="q5_4" value="4"><label
+                            for="q5_4">D．CGI</label></li>
+                    <div style="clear:both;"></div>
+                </ul>
+                <div style="clear:both;"></div>
+                <div class="div_table_clear_bottom"></div>
+            </div>
+            <div class="errorMessage"></div>
+        </div>
+        <div class="div_question" id="div6">
+            <div class="div_title_question_all">
+                <div id="divTitle6" class="div_title_question">6.关于表格的描述正确的一项是。(&nbsp;&nbsp; )<span style="color:red;">&nbsp;*</span>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="div_table_radio_question" id="divquestion6">
+                <div class="div_table_clear_top"></div>
+                <ul class="ulradiocheck">
+                    <li style="width:99%;"><input type="radio" name="q6" id="q6_1" value="1"><label for="q6_1">A．在单元格内不能继续插入整个表格</label>
+                    </li>
+                    <li style="width:99%;"><input type="radio" name="q6" id="q6_2" value="2"><label for="q6_2">B．可以同时选定不相邻的单元格</label>
+                    </li>
+                    <li style="width:99%;"><input type="radio" name="q6" id="q6_3" value="3"><label for="q6_3">C．粘贴表格时，不粘贴表格的内容</label>
+                    </li>
+                    <li style="width:99%;"><input type="radio" name="q6" id="q6_4" value="4"><label for="q6_4">D．在网页中，水平方向可以并排多个独立的表格</label>
+                    </li>
+                    <div style="clear:both;"></div>
+                </ul>
+                <div style="clear:both;"></div>
+                <div class="div_table_clear_bottom"></div>
+            </div>
+            <div class="errorMessage"></div>
+        </div>
+        <div class="div_question" id="div7">
+            <div class="div_title_question_all">
+                <div id="divTitle7" class="div_title_question">
+                    7.如果一个表格包括有1行4列，表格的总宽度为“699”，间距为“5”，填充为“0”，边框为“3”，每列的宽度相同，那么应将单元格定制为多少像素宽。(&nbsp;&nbsp; )<span
+                        style="color:red;">&nbsp;*</span></div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="div_table_radio_question" id="divquestion7">
+                <div class="div_table_clear_top"></div>
+                <ul class="ulradiocheck">
+                    <li style="width:99%;"><input type="radio" name="q7" id="q7_1" value="1"><label
+                            for="q7_1">A．126</label></li>
+                    <li style="width:99%;"><input type="radio" name="q7" id="q7_2" value="2"><label
+                            for="q7_2">B．136</label></li>
+                    <li style="width:99%;"><input type="radio" name="q7" id="q7_3" value="3"><label
+                            for="q7_3">C．147</label></li>
+                    <li style="width:99%;"><input type="radio" name="q7" id="q7_4" value="4"><label
+                            for="q7_4">D．167</label></li>
+                    <div style="clear:both;"></div>
+                </ul>
+                <div style="clear:both;"></div>
+                <div class="div_table_clear_bottom"></div>
+            </div>
+            <div class="errorMessage"></div>
+        </div>
+        <div class="div_question" id="div8">
+            <div class="div_title_question_all">
+                <div id="divTitle16" class="div_title_question"><font>8．下面说法错误的是( )。<span
+                        style="color:red;">&nbsp;*</span></font></div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="div_table_radio_question" id="divquestion16">
+                <div class="div_table_clear_top"></div>
+                <ul class="ulradiocheck">
+                    <li style="width:99%;"><font><input type="radio" name="q8" id="q8_1" value="1"><label for="q9_1">A．CSS样式表可以将格式和结构分离</label></font>
+                    </li>
+                    <li style="width:99%;"><font><input type="radio" name="q8" id="q8_2" value="2"><label for="q9_2">B．CSS样式表可以控制页面的布局</label></font>
+                    </li>
+                    <li style="width:99%;"><font><input type="radio" name="q8" id="q8_3" value="3"><label for="q9_3">C．CSS样式表可以使许多网页同时更新</label></font>
+                    </li>
+                    <li style="width:99%;"><font><input type="radio" name="q8" id="q8_4" value="4"><label for="q9_4">D．CSS样式表不能制作体积更小下载更快的网页</label></font>
+                    </li>
+                    <div style="clear:both;"></div>
+                </ul>
+                <div style="clear:both;"></div>
+                <div class="div_table_clear_bottom"></div>
+            </div>
+            <div class="errorMessage"></div>
+        </div>
+        <div class="div_question" id="div9">
+            <div class="div_title_question_all">
+                <div id="divTitle15" class="div_title_question"><font>9．如果要表单提交信息不以附件的形式发送，只要将表单的“MTME类型”设置为( )。<span
+                        style="color:red;">&nbsp;*</span></font></div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="div_table_radio_question" id="divquestion15">
+                <div class="div_table_clear_top"></div>
+                <ul class="ulradiocheck">
+                    <li style="width:99%;"><font><input type="radio" name="q9" id="q9_1" value="1"><label for="q9_1">A．text／plain</label></font>
+                    </li>
+                    <li style="width:99%;"><font><input type="radio" name="q9" id="q9_2" value="2"><label for="q9_2">B．password</label></font>
+                    </li>
+                    <li style="width:99%;"><font><input type="radio" name="q9" id="q9_3" value="3"><label for="q9_3">C．submit</label></font>
+                    </li>
+                    <li style="width:99%;"><font><input type="radio" name="q9" id="q9_4" value="4"><label for="q9_4">D．button</label></font>
+                    </li>
+                    <div style="clear:both;"></div>
+                </ul>
+                <div style="clear:both;"></div>
+                <div class="div_table_clear_bottom"></div>
+            </div>
+            <div class="errorMessage"></div>
+        </div>
+        <div class="div_question" id="div10">
+            <div class="div_title_question_all">
+                <div id="divTitle10" class="div_title_question"><font>10.下列哪一项是在新窗口中打开网页文档。(&nbsp;&nbsp;&nbsp; )<span
+                        style="color:red;">&nbsp;*</span></font></div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="div_table_radio_question" id="divquestion10">
+                <div class="div_table_clear_top"></div>
+                <ul class="ulradiocheck">
+                    <li style="width:99%;"><font><input type="radio" name="q10" id="q10_1" value="1"><label for="q10_1">A．_self</label></font>
+                    </li>
+                    <li style="width:99%;"><font><input type="radio" name="q10" id="q10_2" value="2"><label for="q10_2">B．_blank</label></font>
+                    </li>
+                    <li style="width:99%;"><font><input type="radio" name="q10" id="q10_3" value="3"><label for="q10_3">C．_top</label></font>
+                    </li>
+                    <li style="width:99%;"><font><input type="radio" name="q10" id="q10_4" value="4"><label for="q10_4">D．_parent</label></font>
+                    </li>
+                    <div style="clear:both;"></div>
+                </ul>
+                <div style="clear:both;"></div>
+                <div class="div_table_clear_bottom"></div>
+            </div>
+            <div class="errorMessage"></div>
+        </div>
+
+        <div class="div_preview">
+            <div class="div_title_cut_question">
+                <div class="div_title_question"><span>二、填空</span></div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+
+        <div class="div_question">
+            <div class="div_preview">
+                <div class="div_title_question_all">
+                    <div class="div_topic_question" style="display: none;">358.</div>
+                    <div class="div_title_question"><span>1．为图片添加简要说明文字的属性是<input id="t1" style="width:77px;" class="underline">。</span><span
+                            style="color: red;">&nbsp;*</span></div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="div_table_radio_question">
+                    <div class="div_table_clear_top"></div>
+                </div>
+                <div class="div_ins_question" style="display: none;"></div>
+            </div>
+        </div>
+        <div class="div_question">
+            <div class="div_preview">
+                <div class="div_title_question_all">
+                    <div class="div_topic_question" style="display: none;">362.</div>
+                    <div class="div_title_question"><span>2．文件头标签包括关键字、描述、<input id="t2" style="width:77px;" class="underline">、基础和链接等。</span><span
+                            style="color: red;">&nbsp;*</span></div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="div_table_radio_question">
+                    <div class="div_table_clear_top"></div>
+                </div>
+                <div class="div_ins_question" style="display: none;"></div>
+            </div>
+        </div>
+        <div class="div_question">
+            <div class="div_preview">
+                <div class="div_title_question_all">
+                    <div class="div_topic_question" style="display: none;">360.</div>
+                    <div class="div_title_question"><span>3．表格的宽度可以用百分比和<input id="t3" style="width:77px;" class="underline">两种单位来设置。</span><span
+                            style="color: red;">&nbsp;*</span></div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="div_table_radio_question">
+                    <div class="div_table_clear_top"></div>
+                </div>
+                <div class="div_ins_question" style="display: none;"></div>
+            </div>
+        </div>
+        <div class="div_question">
+            <div class="div_preview">
+                <div class="div_title_question_all">
+                    <div class="div_topic_question" style="display: none;">361.</div>
+                    <div class="div_title_question"><span>4．插入图片 "&lt;img src='图形文件名'&gt;"标记符中的src英文单词是<input id="t4" style="width:77px;" class="underline">。</span><span
+                            style="color: red;">&nbsp;*</span></div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="div_table_radio_question">
+                    <div class="div_table_clear_top"></div>
+                </div>
+                <div class="div_ins_question" style="display: none;"></div>
+            </div>
+        </div>
+        <div class="div_question">
+            <div class="div_preview">
+                <div class="div_title_question_all">
+                    <div class="div_topic_question" style="display: none;">363.</div>
+                    <div class="div_title_question"><span>5．RGB方式表示的颜色都是由红、绿、<input id="t5" style="width:77px;" class="underline">这3种基色调和而成。</span><span
+                            style="color: red;">&nbsp;*</span></div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="div_table_radio_question">
+                    <div class="div_table_clear_top"></div>
+                </div>
+                <div class="div_ins_question" style="display: none;"></div>
+            </div>
+        </div>
+
+        <div class="div_preview">
+            <div class="div_title_cut_question">
+                <div class="div_title_question"><span>二、问答</span></div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <div class="div_question">
+            <div class="div_preview">
+                <div class="div_title_question_all">
+                    <div class="div_topic_question" style="display: none;">363.</div>
+                    <div class="div_title_question"><span id="page_type_A">哪些浏览器支持HTML5？</span><span id="page_type_B">HTML5 Canvas 元素有什么用？</span><span
+                            style="color: red;">&nbsp;*</span></div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div><input id="w1" style="width:450px;" class="underline"></div>
+                <div class="div_table_radio_question">
+                    <div class="div_table_clear_top"></div>
+                </div>
+                <div class="div_ins_question" style="display: none;"></div>
+            </div>
+        </div>
+
+    </div>
+    <div id="finish">
+        <span id="complete"><input type="button" class="submitbutton" value="交卷" onmouseout="this.className='submitbutton';"
+               id="submit_button" style="padding:0 24px;height:32px;"></span>
+    </div>
+
+</div>
+</body>
+</html>
